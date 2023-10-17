@@ -1,0 +1,28 @@
+@baseURL = http://localhost:8080
+
+
+# @name createUser
+
+POST {{baseURL}}/users/
+Content-Type: application/json
+
+{
+  "username": "Ytalo@Alves",
+  "name": "admin",
+  "password": "123456"
+}
+
+###
+
+# @name createTask
+
+POST {{baseURL}}/tasks/
+Content-Type: application/json
+
+{
+  "description": "Tarefa para gravar aula de criação de tarefa",
+  "title": "Criação de tarefa",
+  "priority": "ALTA",
+  "startAt": "2023-10-13T21:36",
+  "endAt": "2023-10-14T21:36"
+}
